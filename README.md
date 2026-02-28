@@ -108,9 +108,11 @@ The framework is powerful but not magic. Be honest about what it can't do:
 
 ## Background
 
-This framework emerged from a series of conversations with Google's Gemini in 2024, where I was exploring why the model consistently reproduced dominant narratives when asked to analyze controversial topics. I noticed that the model could give nearly identical analysis of a controversy regardless of which side's source material I provided, because the "consensus view" was so deeply embedded in its training data.
+This framework emerged from a series of conversations with Google's Gemini in 2025, where I was exploring a specific question: could I get an LLM to reliably "see through the astroturfing"? I wanted to know if a model could successfully identify underdog factions and produce a nuanced analysis of a topic despite the overwhelming bias in its training data.
 
-The Actor-Narrative Framework was the solution: a structured protocol that forces the analysis to stay grounded in specific textual evidence rather than drifting toward synthesized consensus. It was subsequently implemented as a multi-agent pipeline using Google's Gemini, featuring vector-based semantic memory (ChromaDB), episodic memory (SQLite), and automated entity consolidation.
+We used the Bitcoin "big block vs small block" controversy as our test case—a debate famous for its coordinated messaging and narrative warfare. The model's initial attempts simply parroted the dominant narrative.
+
+The Actor-Narrative Framework was the result: a structured protocol that forces the analysis to stay grounded in specific textual evidence rather than drifting toward synthesized consensus. It was subsequently implemented as a multi-agent pipeline using Google's Gemini, featuring vector-based semantic memory (ChromaDB), episodic memory (SQLite), and automated entity consolidation.
 
 The methodology itself turned out to be more interesting than the software. This repo is the framework in its portable form: a thinking tool you can apply with any LLM, any workflow, or just a notebook and a sharp eye.
 

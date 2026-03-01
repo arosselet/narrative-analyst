@@ -38,12 +38,12 @@ Analyze the author/publisher as a narrative agent. How is the author attempting 
 
 OUTPUT STRUCTURE & ARTIFACTS:
 
-You must generate the following durable files to store your analysis:
+You must generate the following durable files to store your analysis. Create a dedicated subfolder within the `analysis/` directory for the specific topic (e.g., `analysis/topic-name/`) and save all files there.
 
-1. `source_article.txt`
+1. `analysis/topic-name/source_article.txt`
    - Save the raw text of the article provided.
 
-2. `extracted_controversies.md`
+2. `analysis/topic-name/extracted_controversies.md`
    - A structured markdown file containing:
      - Document Metadata (Publisher/Author, stated subject, apparent target audience)
      - The Component Controversies (clean list of sub-fights identified)

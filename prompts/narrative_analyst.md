@@ -53,9 +53,9 @@ Construct the most compelling, internally consistent story for each major factio
 
 OUTPUT STRUCTURE & ARTIFACTS:
 
-You must generate the following durable files to store your macro-analysis:
+You must generate the following durable files to store your macro-analysis. Save these files in the same `analysis/topic-name/` subfolder that contains the input `extracted_controversies.md` file.
 
-1. `narrative_analysis.md`
+1. `analysis/topic-name/narrative_analysis.md`
    - Synthesize Steps 1-6. Must explicitly include:
      - Faction Mapping & Worldviews
      - Rhetorical Tactics Identified
@@ -64,7 +64,7 @@ You must generate the following durable files to store your macro-analysis:
      - Power Structure & Economic Incentives
      - Asymmetries & Marginalized Voices
 
-2. `positioning_comparison.md`
+2. `analysis/topic-name/positioning_comparison.md`
    - Synthesize Step 7.
    - Compare the likelihood/viability of your narrative findings against the author's stated positioning to uncover nuance and hidden strategic aspects.
 ```

@@ -71,18 +71,22 @@ This is the structured process that operationalizes the framework. It can be app
 
 ## Using the Framework
 
-The framework provides two distinct analysis pipelines, designed as specific Personas (or Gemini Gems/Plugins). They are located in the `prompts/` directory.
+The framework is implemented as a 3-stage pipeline using specific Personas (or Gemini Gems/System Prompts). They are located in the `prompts/` directory. For any new topic, create a dedicated subfolder (e.g., `analysis/topic-name/`) to store the intermediate files.
 
 ### Stage 1: The Publication Deconstructor (`prompts/publication_analyst.md`)
-**Use this for:** Extracting the "grist" from a *single specific document* (e.g., an article, press release, or executive memo).
-**How it works:** This persona acts as a pure extraction engine. It does not analyze the underlying truth of the controversy. It only reads the document, extracts the specific sub-controversies mentioned, isolates exactly what claims the document attributes to each faction, and analyzes how the author uses lexicon and structure to manipulate the reader. 
-**Output:** A structured "Deconstruction Matrix" ready for macro-analysis.
+**Input:** A single specific document (e.g., an article, press release, or executive memo).
+**What it does:** This persona acts as a pure extraction engine. It reads the document, extracts the specific sub-controversies mentioned, isolates exactly what claims the document attributes to each faction, and analyzes how the author uses lexicon and structure to position the reader. 
+**Output:** Generates `source_article.txt` and `extracted_controversies.md` in your topic's `analysis/` subfolder.
 
 ### Stage 2: The Narrative Analyst (`prompts/narrative_analyst.md`)
-**Use this for:** Macro-level narrative analysis of a broad topic, OR processing the "Deconstruction Matrix" output from Stage 1. 
-**How it works:** This is the core engine. It takes the extracted claims and controversies, maps the entire battlefield using its internal knowledge, reconstructs the factions' internally consistent worldviews, and identifies the causal schisms and economic incentives driving the conflict.
+**Input:** The `extracted_controversies.md` file from Stage 1. 
+**What it does:** This is the core engine. It takes the extracted claims, maps the entire battlefield using its internal knowledge, reconstructs the factions' internally consistent worldviews, identifies the causal schisms, and compares the deeper reality against the original author's positioning.
+**Output:** Generates `narrative_analysis.md` and `positioning_comparison.md` in the same topic subfolder.
 
-By chaining these two personas, you achieve a strict separation of concerns: one persona isolates *what the document is doing*, while the other analyzes *what the underlying reality is.*
+### Stage 3: The Narrative Journalist (`prompts/article_writer.md`)
+**Input:** The complete set of analysis files from the previous stages (specifically focusing on `positioning_comparison.md`).
+**What it does:** Translates the raw analytical findings into a compelling, public-facing article. It focuses on the deeper systemic implications and hidden nuances, hiding the "machinery" of the framework to present a sharp, independent analysis. It also generates a unique thematic visual metaphor.
+**Output:** A ready-to-publish markdown blog post (saved to `blog/`) and an accompanying image asset.
 
 ## Where It Works Best
 

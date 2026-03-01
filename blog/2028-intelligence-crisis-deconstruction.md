@@ -1,7 +1,7 @@
 # The Containment Narrative: What the "2028 Intelligence Crisis" is Actually Hiding
 *By Andrew R & Gemini | March 1, 2026*
 
-![Containment Unit leaking transferred risk into a capital reserve](./assets/containment_risk_transfer_clipart.png)
+![Containment Unit leaking transferred risk into a capital reserve](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/containment_risk_transfer_clipart.png)
 
 In February 2026, CitriniResearch and Alap Shah published "THE 2028 GLOBAL INTELLIGENCE CRISIS," a speculative dispatch from two years in the future. The memo models a near-term macroeconomic collapse triggered by the unchecked proliferation of artificial intelligence. It chronicles a world where agentic software eliminates friction, destroys white-collar labor, and triggers a synchronized cascade of software defaults and mortgage failures.
 

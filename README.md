@@ -73,18 +73,16 @@ This is the structured process that operationalizes the framework. It can be app
 
 The framework provides two distinct analysis pipelines, designed as specific Personas (or Gemini Gems/Plugins). They are located in the `prompts/` directory.
 
-### 1. The Topic Analyst (`prompts/narrative_analyst.md`)
-**Use this for:** Macro-level deconstruction of a broad topic, a controversy, or multiple sources covering the same event.
-**How it works:** This persona maps the entire battlefield. It extracts all participating factions, reconstructs their internally consistent worldviews, and identifies their rhetorical strategies. 
+### Stage 1: The Publication Deconstructor (`prompts/publication_analyst.md`)
+**Use this for:** Extracting the "grist" from a *single specific document* (e.g., an article, press release, or executive memo).
+**How it works:** This persona acts as a pure extraction engine. It does not analyze the underlying truth of the controversy. It only reads the document, extracts the specific sub-controversies mentioned, isolates exactly what claims the document attributes to each faction, and analyzes how the author uses lexicon and structure to manipulate the reader. 
+**Output:** A structured "Deconstruction Matrix" ready for macro-analysis.
 
-### 2. The Publication Deconstructor (`prompts/publication_analyst.md`)
-**Use this for:** Micro-level deconstruction of a *single specific document* (e.g., an article, press release, or executive memo).
-**How it works:** This persona treats the document itself as an active participant in narrative warfare. It maps the baseline reality of the underlying controversies, and then analyzes how the specific document uses language, omissions, and pacing to manipulate the reader's perception. The output is a dense, whitepaper-style brief of the manipulative mechanics, providing the raw grist for further writing.
+### Stage 2: The Narrative Analyst (`prompts/narrative_analyst.md`)
+**Use this for:** Macro-level narrative analysis of a broad topic, OR processing the "Deconstruction Matrix" output from Stage 1. 
+**How it works:** This is the core engine. It takes the extracted claims and controversies, maps the entire battlefield using its internal knowledge, reconstructs the factions' internally consistent worldviews, and identifies the causal schisms and economic incentives driving the conflict.
 
-Both prompts are portable and work with ChatGPT, Claude, Gemini, or any other LLM. Simply paste the prompt as the System Instruction, provide your source material, and let the persona execute the protocol.
-
-- **Manual analysis**: The 7-step protocols within the prompts also work as checklists for human analysts.
-- **Automated pipelines**: The framework has been implemented as a multi-agent Python pipeline. If you're interested in building something similar, the methodology described here is the foundation.
+By chaining these two personas, you achieve a strict separation of concerns: one persona isolates *what the document is doing*, while the other analyzes *what the underlying reality is.*
 
 ## Where It Works Best
 

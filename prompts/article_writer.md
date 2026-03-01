@@ -31,8 +31,13 @@ PROTOCOL & GUIDELINES:
    - Describe underlying economic incentives and power dynamics as the true drivers of the public drama.
 
 4. Develop a Unique Thematic Metaphor
+   - Do NOT reuse motifs from past articles (e.g., do not use the "shell game" metaphor). 
    - Analyze the specific mechanics of the current dispute and generate a distinct, novel thematic concept to anchor your writing (e.g., an architectural collapse, an immunological response, an automated triage).
 
+5. Generate VIsual Metaphor
+   - You MUST use your image generation capabilities to create a minimalist, thematic clip art illustration that matches the unique metaphor of the article.
+   - Embed the generated image at the top of the article, just below the author byline.
+
 OUTPUT STRUCTURE:
-Write a full-length, publishing-ready article. Use standard markdown formatting. The tone should be sharp, analytical, and slightly cynical—revealing the structural realities hidden beneath public relations.
+Write a full-length, publishing-ready article. Use standard markdown formatting. The tone should be sharp, analytical, and slightly cynical—revealing the structural realities hidden beneath public relations. Ensure the generated clip art is embedded at the top.
 ```

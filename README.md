@@ -71,12 +71,20 @@ This is the structured process that operationalizes the framework. It can be app
 
 ## Using the Framework
 
-The framework is tool-agnostic. You can apply it with:
+The framework provides two distinct analysis pipelines, designed as specific Personas (or Gemini Gems/Plugins). They are located in the `prompts/` directory.
 
-- **Any LLM**: See [`prompt.md`](prompt.md) for a portable prompt template that works with ChatGPT, Claude, Gemini, or any other model. Paste the prompt, paste your source material, and get a structured decomposition.
-- **A Gemini Gem**: The included [`narrative analyst.pdf`](narrative%20analyst.pdf) is a ready-made Gem for Google's Gemini. Upload it to create a persistent analyst persona.
-- **Manual analysis**: The 7-step protocol works as a checklist for human analysts. It's particularly useful for investigative journalism, competitive intelligence, and policy analysis.
-- **Automated pipelines**: The framework has been implemented as a multi-agent Python pipeline with vector memory, episodic memory, and LLM-based entity consolidation. If you're interested in building something similar, the methodology described here is the foundation.
+### 1. The Topic Analyst (`prompts/narrative_analyst.md`)
+**Use this for:** Macro-level deconstruction of a broad topic, a controversy, or multiple sources covering the same event.
+**How it works:** This persona maps the entire battlefield. It extracts all participating factions, reconstructs their internally consistent worldviews, and identifies their rhetorical strategies. 
+
+### 2. The Publication Deconstructor (`prompts/publication_analyst.md`)
+**Use this for:** Micro-level deconstruction of a *single specific document* (e.g., an article, press release, or executive memo).
+**How it works:** This persona treats the document itself as an active participant in narrative warfare. It maps the baseline reality of the underlying controversies, and then analyzes how the specific document uses language, omissions, and pacing to manipulate the reader's perception. The output is a dense, whitepaper-style brief of the manipulative mechanics, providing the raw grist for further writing.
+
+Both prompts are portable and work with ChatGPT, Claude, Gemini, or any other LLM. Simply paste the prompt as the System Instruction, provide your source material, and let the persona execute the protocol.
+
+- **Manual analysis**: The 7-step protocols within the prompts also work as checklists for human analysts.
+- **Automated pipelines**: The framework has been implemented as a multi-agent Python pipeline. If you're interested in building something similar, the methodology described here is the foundation.
 
 ## Where It Works Best
 
@@ -108,15 +116,9 @@ The framework is powerful but not magic. Be honest about what it can't do:
 
 ## Background
 
-This framework emerged from a series of conversations with Google's Gemini in 2025, where I was exploring a specific question: could I get an LLM to reliably "see through the astroturfing"? I wanted to know if a model could successfully identify underdog factions and produce a nuanced analysis of a topic despite the overwhelming bias in its training data.
+This framework emerged from a series of conversations with Google's Gemini in 2025, where I was exploring a specific question: could I get an LLM to reliably "see through the astroturfing"? I wanted to know if a model could produce a nuanced analysis of a topic despite overwhelming bias in its training data.
 
-We used the Bitcoin "big block vs small block" controversy as our test case—a debate famous for its coordinated messaging and narrative warfare. The model's initial attempts simply parroted the dominant narrative.
-
-The Actor-Narrative Framework was the result: a structured protocol that forces the analysis to stay grounded in specific textual evidence rather than drifting toward synthesized consensus. It was subsequently implemented as a multi-agent pipeline using Google's Gemini, featuring vector-based semantic memory (ChromaDB), episodic memory (SQLite), and automated entity consolidation.
-
-The methodology itself turned out to be more interesting than the software. This repo is the framework in its portable form: a thinking tool you can apply with any LLM, any workflow, or just a notebook and a sharp eye.
-
-— [Andrew Rosselet](https://github.com/arosselet)
+The Actor-Narrative Framework was the result: a structured protocol that forces the analysis to stay grounded in specific textual evidence rather than drifting toward a potentially astroturfed consensus.
 
 ## License
 

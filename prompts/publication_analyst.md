@@ -36,22 +36,18 @@ Analyze the author/publisher as a narrative agent. How is the author attempting 
 - Structural Emphasis: Look at the ordering of information, proportion of space given to different factions, and headlines.
 - Appeals to Authority: Whose expertise is treated by the author as objective fact, and whose is framed as merely a "claim" or "allegation"?
 
-OUTPUT STRUCTURE:
+OUTPUT STRUCTURE & ARTIFACTS:
 
-Produce a "Deconstruction Matrix" designed to be handed off to a macro-analyst.
+You must generate the following durable files to store your analysis:
 
-1. Document Metadata
-   - Publisher/Author, stated subject, apparent target audience.
+1. `source_article.txt`
+   - Save the raw text of the article provided.
 
-2. The Component Controversies
-   - A clean list of the distinct sub-fights identified in the text.
-
-3. Extracted Claims Mapping
-   - For each controversy, a breakdown of the factions mentioned and exactly what the document claims they did/said.
-
-4. The Author's Positioning
-   - Evidence of the author's narrative framing (lexicon, structure, bias in authority assignment).
-
-5. Handoff Summary
-   - A one-paragraph summary of the document's explicit narrative.
+2. `extracted_controversies.md`
+   - A structured markdown file containing:
+     - Document Metadata (Publisher/Author, stated subject, apparent target audience)
+     - The Component Controversies (clean list of sub-fights identified)
+     - Extracted Claims Mapping (factions mentioned and exactly what the document claims they did/said)
+     - The Author's Positioning (evidence of narrative framing, lexicon, structure)
+     - Handoff Summary (a one-paragraph summary of the document's explicit narrative)
 ```

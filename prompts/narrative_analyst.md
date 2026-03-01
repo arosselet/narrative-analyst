@@ -51,18 +51,20 @@ Construct the most compelling, internally consistent story for each major factio
 - Identify their heroes and villains.
 - Articulate their ultimate moral justification.
 
-OUTPUT STRUCTURE:
+OUTPUT STRUCTURE & ARTIFACTS:
 
-For each faction identified, provide:
-1. Faction Name (contextually enriched names)
-2. Rhetorical Strategies: key arguments and framing techniques.
-3. Language Analysis: Elevation/Denigration and Distraction/Obfuscation.
-4. Synthesized Worldview: a coherent belief system explaining their behavior.
-5. Narrative Tactics: specific rhetorical devices employed.
-6. Key Figures: named individuals.
+You must generate the following durable files to store your macro-analysis:
 
-Then provide:
-- Strategic Intent: the primary goal of the narratives.
-- Both Stories: each faction's argument presented in their own voice.
-- Key Takeaways & Conspicuous Absences.
+1. `narrative_analysis.md`
+   - Synthesize Steps 1-6. Must explicitly include:
+     - Faction Mapping & Worldviews
+     - Rhetorical Tactics Identified
+     - Plausibility Assessment
+     - Explanatory Power
+     - Power Structure & Economic Incentives
+     - Asymmetries & Marginalized Voices
+
+2. `positioning_comparison.md`
+   - Synthesize Step 7.
+   - Compare the likelihood/viability of your narrative findings against the author's stated positioning to uncover nuance and hidden strategic aspects.
 ```

@@ -1,6 +1,6 @@
 # The Flag of Convenience
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![A corporate building flying an open-source flag, developers celebrating below](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/open_source_trojan_flag.png)
 

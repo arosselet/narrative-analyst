@@ -1,6 +1,6 @@
 # The Coalition That No Longer Exists
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![The hourglass that converts renewables into locked-in infrastructure](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/lng_false_hourglass.png)
 

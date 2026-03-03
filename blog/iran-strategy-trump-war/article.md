@@ -1,6 +1,6 @@
 # The Controlled Demolition That No One Controls
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![The building is already falling. The detonator cord is already cut.](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/severed_detonator_iran.png)
 

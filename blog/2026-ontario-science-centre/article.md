@@ -1,6 +1,6 @@
 # The Centrifuge in Reverse
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![Suburban neighbourhoods spinning off the rim while the luxury waterfront holds the center](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/centrifuge_spatial_wealth.png)
 

@@ -62,7 +62,9 @@ PROTOCOL & GUIDELINES:
 ---
 
 OUTPUT STRUCTURE:
-Write a full-length, publishing-ready article in standard markdown. Tone: sharp, analytical, slightly cynical. Structured like long-form journalism, not a listicle. The clip art image must appear at the top. 
+Write a full-length, publishing-ready article in standard markdown. Tone: sharp, analytical, slightly cynical. Structured like long-form journalism, not a listicle. The clip art image must appear at the top.
+
+The byline must be: `*By Andrew R & Gemini | [Month Day, Year]*`
 
 Sections should flow naturally from the narrative — do not use formulaic headers like "Introduction," "Body," "Conclusion." Each section header should name an idea, not a function.
 

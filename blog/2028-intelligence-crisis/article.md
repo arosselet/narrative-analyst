@@ -1,6 +1,6 @@
 # The Debt That Cannot See Deflation
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![The friction economy being crushed — and price tags dropping to near-zero](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/friction_economy_collapse.png)
 

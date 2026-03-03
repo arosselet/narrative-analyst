@@ -1,6 +1,6 @@
 # The Dual-Frequency Broadcast
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![One message, two audiences — the dual megaphone](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/dual_megaphone_doom.png)
 

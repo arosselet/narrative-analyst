@@ -1,6 +1,6 @@
 # The Precedent That Cannot Be Set
 
-*By Narrative Analyst | March 3, 2026*
+*By Andrew R & Gemini | March 3, 2026*
 
 ![A legal ruling that tips everything that follows](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/assets/cascading_dominoes_territory.png)
 

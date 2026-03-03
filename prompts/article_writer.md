@@ -45,6 +45,7 @@ PROTOCOL & GUIDELINES:
    - Do NOT mention the "Actor-Narrative Framework," its steps, or its intermediate files.
    - The article should read as a substantive, independent analysis. Do not use structural headers like "Factions," "Plausibility," or "Positioning Comparison."
    - The framework's presence should be felt in the quality and structure of the analysis, not disclosed.
+   - Never use meta-commentary that references the article itself: phrases like "this is where the analysis sharpens," "the key insight here is," "what makes this interesting," or any sentence that steps outside the argument to narrate it. Trust the argument to land on its own.
 
 6. Uncover the Real Story
    - Look beyond the public controversy to the deeper systemic shifts shaping it.

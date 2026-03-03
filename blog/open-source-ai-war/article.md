@@ -28,8 +28,6 @@ This is regulatory capture via community. It is structurally elegant precisely b
 
 The Open Source Initiative has rejected Meta's open-source claim primarily on training data grounds: true open source, in the OSI's framework, requires full transparency of inputs. A model trained on undisclosed data cannot be properly audited, reproduced, or independently improved — therefore it fails the fundamental reproducibility test.
 
-This is where the analysis sharpens considerably.
-
 The training data transparency standard that the OSI demands would disqualify not only Meta's Llama but every frontier model currently operating at scale — including those developed by OpenAI (the commercial spin-off of an organization significantly funded by Microsoft) and Google DeepMind. No frontier model can legally disclose comprehensive training data in the current copyright litigation environment. To do so would be to hand plaintiffs a discovery document in the pending publisher and author class actions.
 
 The OSI's major institutional donors include Microsoft and Google.

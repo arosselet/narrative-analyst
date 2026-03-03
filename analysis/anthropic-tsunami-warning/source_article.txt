@@ -1,0 +1,34 @@
+Anthropic CEO Warns of “Tsunami” on Horizon
+"There doesn't seem to be a wider recognition in society of what's about to happen."
+By Frank Landymore
+
+Published Feb 27, 2026 10:14 AM EST
+
+Anthropic CEO Dario Amodei spoke of an AI "tsunami" on the horizon which he claims everyone is ignoring the warning signs of.
+Illustration by Tag Hartman-Simkins / Futurism. Source: Ludovic Martin / AFP via Getty Images
+Sign up to see the future, today
+
+Can’t-miss innovations from the bleeding edge of science and tech
+
+Email address
+Enter your email
+Sign Up
+Dario Amodei may boast many credentials, but we weren’t aware that meteorologist was one of them.
+
+This week, the Anthropic CEO warned of an impending AI “tsunami” that will upend human society as the tech surpasses human intelligence. And if you don’t believe him, he suggests, you’re simply lying to yourself.
+
+“It’s surprising to me that we are, in my view, so close to these models reaching human level intelligence, and yet there doesn’t seem to be a wider recognition in society of what’s about to happen,” Amodei said in an interview with Indian investor Nikhil Kamath on an episode the WTF Is podcast released Tuesday.
+
+“It’s as if this tsunami is coming at us, and it’s so close we can see it on the horizon,” he prophesized. “And yet people are coming up with these explanations, ‘oh, it’s not actually a tsunami… that’s just a trick of the light.'”
+
+Amodei’s comments echo the bold and often dire predictions peddled by leaders in the AI industry. OpenAI CEO Sam Altman has frequently been candid that AI will wipe out entire categories of jobs. Microsoft’s AI CEO warned that virtually all office tasks will be automated by AI agents within one and a half years. Amodei infamously warned that AI would eliminate half of entry-level white collar jobs. While these sound like damaging predictions to make on the surface, they reinforce a fatalistic attitude toward the tech, suggesting it’s inevitable it will improve.
+
+But if an AI tsunami is indeed coming, as Amodei claims, then Anthropic has a major hand in it. Its recent release of its Claude Cowork AI agent sparked a mass software stock selloff that reverberated throughout the broader stock market and wiped out hundreds of billions of dollars. 
+
+The company also heavily anthropomorphizes its AI models with stunts like letting it share its “reflections” on its own Substack, and consistently dangling the possibility that it may already be conscious. This plants the idea that the tech is on its inevitable way to becoming an all-powerful artificial general intelligence, or in the industry’s latest preferred nomenclature, an AI “superintelligence.”
+
+Tsunami or not, Amodei’s comments come during a pretty stormy moment for the company. This week, it abandoned one of its central safety pledges which held it would not train or release an AI model that it couldn’t guarantee adequate guardrails for, undermining the company’s entire raison d’etre. That decision was made amid pressure from the Pentagon to relax its restrictions on how its AIs are used or face losing its $200 million defense contract.
+
+Though Anthropic positioned itself as the safety-focused adult in the room, it’s now sounding no less hypocritical than its competitors for feigning concern for the tech’s impacts on society. 
+
+“There hasn’t been an appropriate realization of the risks of the technology, and there certainly hasn’t been action,” Amodei said during his recent podcast appearance.

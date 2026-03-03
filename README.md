@@ -120,23 +120,6 @@ The framework is powerful but not magic. Be honest about what it can't do:
 - **It doesn't tell you who's right.** The framework's power is in making each side's narrative machinery visible. It doesn't adjudicate truth. That's your job.
 - **It works best on genuinely multi-sided controversies.** If there's really only one reasonable interpretation of a situation, the framework will dutifully construct two sides anyway. Use judgment.
 
-## Published Articles
-
-These articles were produced by the pipeline. Each one identifies a specific manipulation or structural insight not present in the original source reporting.
-
-| Topic | Core Insight |
-|---|---|
-| [The Controlled Demolition That No One Controls](blog/iran-strategy-trump-war/article.md) | Iran's strategy is structural suicide, not asymmetric endurance — and Russia/China are conspicuously absent from every proposed "deal" |
-| [The Dual-Frequency Broadcast](blog/anthropic-tsunami-warning/article.md) | Dario Amodei's tsunami warnings function simultaneously as public liability protection and enterprise capability advertising — the same statement, two audiences |
-| [The Safety Shell Game](blog/anthropic-pentagon-stance.md) | Anthropic's Pentagon standoff was a narrative distraction timed to cover the quiet gutting of its core safety policy |
-| [The Flag of Convenience](blog/open-source-ai-war/article.md) | Meta uses "open source" as a regulatory shield; the OSI's impossible transparency standard is a proxy weapon deployed on behalf of Microsoft and Google |
-| [The Precedent That Cannot Be Set](blog/kitigan-zibi-land-claim/article.md) | The Kitigan Zibi $5B claim is not a damages ask — it is a pressure instrument designed to force a co-management settlement before the precedent cascades across every unceded watershed in Quebec |
-| [The Coalition That No Longer Exists](blog/lng-export-push/article.md) | The 100M-tonne LNG target is an anchoring decoy; the real story is that Indigenous equity ownership has permanently fractured the coalition that used to block resource projects |
-| [The Centrifuge in Reverse](blog/2026-ontario-science-centre/article.md) | The Science Centre relocation is spatial wealth transfer: public investment stripped from working-class suburbs and redeployed as infrastructure for a luxury waterfront spa |
-| [The Debt That Cannot See Deflation](blog/2028-intelligence-crisis/article.md) | The 2028 AI crisis scenarios have a structural blind spot — written by fixed-rate debt holders who cannot model deflation as a consumer benefit |
-
----
-
 ## Background
 
 This framework emerged from a question: could an LLM reliably "see through the astroturfing"? Not just summarize a controversy, but identify the manipulation beneath the rhetoric — even when that manipulation is deeply embedded in its training data?

@@ -126,11 +126,14 @@ These articles were produced by the pipeline. Each one identifies a specific man
 
 | Topic | Core Insight |
 |---|---|
-| [The Controlled Demolition That No One Controls](blog/iran-strategy-trump-war/article.md) | Iran's strategy is structural suicide, not asymmetric endurance — and Russia/China are conspicuously absent from every proposed deal |
-| [The Safety Shell Game](blog/anthropic-pentagon-stance.md) | Anthropic's Pentagon standoff was a narrative distraction timed precisely to cover the gutting of its core safety policy |
-| [Subtext Extraction: The Open Source AI War](blog/open-source-ai-war/article.md) | Meta is using the "open source" label as regulatory capture, with the OSI fighting a proxy war on behalf of Microsoft and Google |
-| [The Seismograph Paradox](blog/anthropic-tsunami-warning/article.md) | Analysis of Anthropic's dual-role as both warning system and acceleration engine in AI safety discourse |
-| [The Manufactured Boundary](blog/kitigan-zibi-land-claim/article.md) | How procedural language obscures structural dispossession in Indigenous land claim negotiations |
+| [The Controlled Demolition That No One Controls](blog/iran-strategy-trump-war/article.md) | Iran's strategy is structural suicide, not asymmetric endurance — and Russia/China are conspicuously absent from every proposed "deal" |
+| [The Dual-Frequency Broadcast](blog/anthropic-tsunami-warning/article.md) | Dario Amodei's tsunami warnings function simultaneously as public liability protection and enterprise capability advertising — the same statement, two audiences |
+| [The Safety Shell Game](blog/anthropic-pentagon-stance.md) | Anthropic's Pentagon standoff was a narrative distraction timed to cover the quiet gutting of its core safety policy |
+| [The Flag of Convenience](blog/open-source-ai-war/article.md) | Meta uses "open source" as a regulatory shield; the OSI's impossible transparency standard is a proxy weapon deployed on behalf of Microsoft and Google |
+| [The Precedent That Cannot Be Set](blog/kitigan-zibi-land-claim/article.md) | The Kitigan Zibi $5B claim is not a damages ask — it is a pressure instrument designed to force a co-management settlement before the precedent cascades across every unceded watershed in Quebec |
+| [The Coalition That No Longer Exists](blog/lng-export-push/article.md) | The 100M-tonne LNG target is an anchoring decoy; the real story is that Indigenous equity ownership has permanently fractured the coalition that used to block resource projects |
+| [The Centrifuge in Reverse](blog/2026-ontario-science-centre/article.md) | The Science Centre relocation is spatial wealth transfer: public investment stripped from working-class suburbs and redeployed as infrastructure for a luxury waterfront spa |
+| [The Debt That Cannot See Deflation](blog/2028-intelligence-crisis/article.md) | The 2028 AI crisis scenarios have a structural blind spot — written by fixed-rate debt holders who cannot model deflation as a consumer benefit |
 
 ---
 

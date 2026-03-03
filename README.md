@@ -2,6 +2,8 @@
 
 **A systematic method for deconstructing controversies, identifying narrative warfare, and seeing through the stories we're told.**
 
+Most LLM analysis reproduces the dominant narrative with better grammar. This framework forces systematic decomposition before any synthesis occurs — producing analysis that reveals what no mainstream journalist covering the same story has written.
+
 ---
 
 ## The Problem
@@ -73,6 +75,8 @@ This is the structured process that operationalizes the framework. It can be app
 
 The framework is implemented as a 3-stage pipeline using specific Personas (or Gemini Gems/System Prompts). They are located in the `prompts/` directory. For any new topic, create a dedicated subfolder (e.g., `analysis/topic-name/`) to store the intermediate files.
 
+The pipeline is designed for topics where one side of a controversy has invested heavily in shaping public discourse — where the dominant narrative is so embedded that a standard LLM would simply reproduce it. If both sides of a controversy are already well-represented in mainstream coverage, the framework will still map the terrain, but the marginal value is lower.
+
 ### Stage 1: The Publication Deconstructor (`prompts/publication_analyst.md`)
 **Input:** A single specific document (e.g., an article, press release, or executive memo).
 **What it does:** This persona acts as a pure extraction engine. It reads the document, extracts the specific sub-controversies mentioned, isolates exactly what claims the document attributes to each faction, and analyzes how the author uses lexicon and structure to position the reader. 
@@ -85,8 +89,8 @@ The framework is implemented as a 3-stage pipeline using specific Personas (or G
 
 ### Stage 3: The Narrative Journalist (`prompts/article_writer.md`)
 **Input:** The complete set of analysis files from the previous stages (specifically focusing on `positioning_comparison.md`).
-**What it does:** Translates the raw analytical findings into a compelling, public-facing article. It focuses on the deeper systemic implications and hidden nuances, hiding the "machinery" of the framework to present a sharp, independent analysis. It also generates a unique thematic visual metaphor.
-**Output:** A ready-to-publish markdown blog post (saved to `blog/`) and an accompanying image asset.
+**What it does:** Translates the raw analytical findings into a publishing-ready article. Before writing, the persona must answer a gating question: *"What does this article reveal that no human journalist covering this story has written?"* If no clear answer exists, the analysis is sharpened until one does. The output leads with stakes (not methodology), anchors abstract arguments in concrete evidence, and ends with a falsifiable forward-looking claim. The framework's presence is felt in analytical quality, not disclosed in the text.
+**Output:** A publishing-ready markdown article (saved to `blog/`) and an accompanying thematic image asset.
 
 ## Where It Works Best
 
@@ -116,11 +120,27 @@ The framework is powerful but not magic. Be honest about what it can't do:
 - **It doesn't tell you who's right.** The framework's power is in making each side's narrative machinery visible. It doesn't adjudicate truth. That's your job.
 - **It works best on genuinely multi-sided controversies.** If there's really only one reasonable interpretation of a situation, the framework will dutifully construct two sides anyway. Use judgment.
 
+## Published Articles
+
+These articles were produced by the pipeline. Each one identifies a specific manipulation or structural insight not present in the original source reporting.
+
+| Topic | Core Insight |
+|---|---|
+| [The Controlled Demolition That No One Controls](blog/iran-strategy-trump-war/article.md) | Iran's strategy is structural suicide, not asymmetric endurance — and Russia/China are conspicuously absent from every proposed deal |
+| [The Safety Shell Game](blog/anthropic-pentagon-stance.md) | Anthropic's Pentagon standoff was a narrative distraction timed precisely to cover the gutting of its core safety policy |
+| [Subtext Extraction: The Open Source AI War](blog/open-source-ai-war/article.md) | Meta is using the "open source" label as regulatory capture, with the OSI fighting a proxy war on behalf of Microsoft and Google |
+| [The Seismograph Paradox](blog/anthropic-tsunami-warning/article.md) | Analysis of Anthropic's dual-role as both warning system and acceleration engine in AI safety discourse |
+| [The Manufactured Boundary](blog/kitigan-zibi-land-claim/article.md) | How procedural language obscures structural dispossession in Indigenous land claim negotiations |
+
+---
+
 ## Background
 
-This framework emerged from a series of conversations with Google's Gemini in 2025, where I was exploring a specific question: could I get an LLM to reliably "see through the astroturfing"? I wanted to know if a model could produce a nuanced analysis of a topic despite overwhelming bias in its training data.
+This framework emerged from a question: could an LLM reliably "see through the astroturfing"? Not just summarize a controversy, but identify the manipulation beneath the rhetoric — even when that manipulation is deeply embedded in its training data?
 
-The Actor-Narrative Framework was the result: a structured protocol that forces the analysis to stay grounded in specific textual evidence rather than drifting toward a potentially astroturfed consensus.
+The answer turned out to be yes, with the right constraints. The Actor-Narrative Framework is those constraints: a structured protocol that forces the analysis to stay grounded in specific textual evidence, map each faction's worldview before synthesizing across them, and surface the gap between what actors say and what structural incentives predict they would do.
+
+The pipeline has been running since 2025 in collaboration with Google's Gemini. The prompts are open source. The methodology is reproducible.
 
 ## License
 

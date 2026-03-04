@@ -65,15 +65,17 @@ The Actor-Narrative Framework routes around that block. It does not require a be
 
 The goal is not to fix the junior analyst. The goal is to make you the senior engineer who knows how to read their raw output.
 
-## What This Predicts
+## The Framework Was Not Invented
 
-The most direct test of this claim is reproducibility. Take any sufficiently contested public controversy — one where a well-resourced side has had significant opportunity to shape the record — and run the same analysis twice: once with a direct prompt asking for critical analysis, once through the Actor-Narrative Framework's staged decomposition. The outputs will not be variations on a theme. They will be structurally different documents that disagree on what the story is.
+The Actor-Narrative Framework did not begin as a theory. It began as a conversation — a series of exchanges with a model about a specific, deeply contested controversy, in which the model kept producing the standard output: both sides have fair points, the community is divided, resolution is ongoing. Every direct prompt for sharper analysis returned the same material reorganized with more assertive grammar.
 
-For the Meta-OSI case specifically: watch for the moment the OSI's training-data transparency standard is quietly revised into something that commercial frontier labs — including those operated by OSI donors — can meet. If that revision occurs without a corresponding public reckoning with why the original standard was set where it was, it will confirm the structural claim. The standard was a competitive instrument. When the instrument is no longer needed, it will be adjusted without ceremony.
+The protocol that eventually broke that loop — worldview reconstruction before synthesis, the systematic mapping of factions and their funding relationships, the deliberate search for actors and arguments conspicuously absent from the dominant account — was not imported from outside. It was extracted, iteratively, from the model itself. The model already contained the structural evidence. It had ingested the dominant narrative and the counter-evidence and the suppressed arguments that never achieved statistical weight in the training distribution. The problem was not the data. The problem was that the model's default synthesis was architecturally constrained to reproduce the dominant account as the neutral starting position.
 
-That adjustment is also the moment when the junior analyst's summary of the controversy will update — because the revision will generate coverage, and coverage will shift the distribution. The framework-produced analysis will not need to update. It will have already described the mechanism that produces the revision.
+What broke the loop was not a better model. It was a protocol that refused to begin with synthesis. By forcing the model to reconstruct each actor's worldview from the inside — to inhabit the OSI's institutional logic before evaluating it, to take the underdog's position seriously on its own terms before comparing it to the dominant account — the protocol surfaced what the direct prompt never could: the unstated premise that both sides had accepted and neither had declared. Once that premise was visible, the "both sides" structure dissolved.
 
-The distribution updates when the hand changes the script. The hand does not change.
+This is the operational proof of the claim. The sleight of hand in a sophisticated narrative conflict is invisible not because the evidence is hidden, but because the framing has been installed so successfully that it reads as common sense. The model learns the framing the same way we do — by absorbing a corpus in which the dominant account achieved statistical weight through resources, not accuracy. The 99% who accept the manufactured consensus as the obvious truth are not credulous. They are operating on premises inserted so cleanly they cannot be located by introspection.
+
+The framework does not fix the junior analyst. It makes the installation visible. That is the only thing that was ever needed.
 
 ---
 

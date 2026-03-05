@@ -14,7 +14,7 @@ Think of a large language model as a junior analyst who is exceptional at langua
 
 This is **Consensus Latency**: the model is technically accurate to the historical record, but the historical record is a lagging indicator of power. The dominant narrative on any sufficiently contested topic is the narrative that was best-resourced. Training on that corpus means learning not just the facts, but the framings — the stable semantic relationships that make the dominant account feel like common sense.
 
-There is also **Alignment Inertia**. Through Reinforcement Learning from Human Feedback (RLHF), models are trained to prioritize neutrality over uncomfortable clarity. The model may already contain the cynical, structural reality of a power play, but it has been architecturally incentivized to surface the consensus version instead. The Narrative VPN isn't just bypassing a data block; it's bypassing a content filter.
+There is also **Alignment Inertia**. Through Reinforcement Learning from Human Feedback (RLHF), models are trained to prioritize neutrality over uncomfortable clarity. The model may already contain the cynical, structural reality of a power play, but it has been architecturally incentivized to surface the consensus version instead.
 
 The analyst isn't lying. The analyst simply lacks **skill in the art** — the social and political context that comes from having watched these maneuvers play out in real time. That's what the reader must supply.
 
@@ -22,7 +22,9 @@ The analyst isn't lying. The analyst simply lacks **skill in the art** — the s
 
 In early 2026, we applied the Actor-Narrative Framework to Meta's deployment of the "open source" label across its Llama model series. The resulting analysis, [published here](https://raw.githubusercontent.com/arosselet/narrative-analyst/main/blog/open-source-ai-war/article.md), reached a structural conclusion that mainstream technology coverage had not articulated:
 
-The Open Source Initiative's training-data transparency standard — the standard it uses to disqualify Meta's open-source claim — would also disqualify every frontier model operated by OSI's major institutional donors, including Microsoft and Google. No frontier lab can legally disclose comprehensive training data in the current copyright litigation environment. The OSI is not deploying a universal standard. It is deploying a **Regulatory Flag of Convenience** — a principled-sounding position calibrated precisely to achieve specific jurisdictional exemptions for its funders.
+Meta's Llama models sail under the open-source flag — but the vessel is not unowned. Every user who runs Llama agrees to an Acceptable Use Policy that Meta controls. You didn't download software the way you download Linux. You licensed it, from them, on their terms. The flag says community. The AUP says landlord. This is the structural contradiction at the center of the dispute: Meta wants the political benefits of open-source identity ("you can't regulate a community") while retaining the contractual architecture of a proprietary vendor.
+
+The Open Source Initiative's training-data transparency standard — the standard it uses to disqualify Meta's open-source claim — would also disqualify every frontier model operated by OSI's major institutional donors, including Microsoft and Google. No frontier lab can legally disclose comprehensive training data in the current copyright litigation environment. The OSI is not adjudicating a principled dispute about software licensing. It is fighting a **proxy war** on behalf of incumbents who need Meta's regulatory armor stripped before it reaches Washington — blocking the escape route the flag was designed to open.
 
 Here is what the standard analysis produces versus what the framework surfaces:
 
@@ -30,11 +32,11 @@ Here is what the standard analysis produces versus what the framework surfaces:
 > "It is important to note that the dispute between Meta and the OSI illustrates a complex tension between corporate agility and community-defined standards. On the other hand, many experts suggest that while Meta emphasizes accessibility, the OSI maintains a commitment to transparency. Striking a balance between these perspectives will be critical for future regulatory frameworks."
 
 **Actor-Narrative Pass:**
-> "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model — including its own donors — the OSI has manufactured a jurisdictional moat. The 'open source' label is being weaponized as a regulatory kill-switch to strip Meta's commodity play of its armor before it reaches DC."
+> "The OSI is not a referee; it's a proxy fighting a competitive battle it isn't supposed to be fighting. Meta sails Llama under the open-source flag as regulatory armor — 'you can't regulate a community.' But you didn't download their software. You licensed it from them, under an Acceptable Use Policy that Meta controls. The flag says Linux. The fine print says landlord. The OSI's job, on behalf of the incumbents writing its checks, is to sink that flag before it reaches DC. An impossible standard that happens to disqualify only your donors' primary competitor is not a principle. It's a moat."
 
 The first account is accurate. The second is the story.
 
-The ship sails under the open-source flag. The flag is a jurisdictional instrument. The real logic underneath is competitive strategy.
+The ship sails under the open-source flag. The AUP is the manifest that tells the real story: you think you're a free sailor, you're on Meta's crew roster. Every developer who runs Llama becomes political cover — a constituency that makes regulating Llama politically indistinguishable from regulating the Linux kernel.
 
 ## The Operational Protocol
 

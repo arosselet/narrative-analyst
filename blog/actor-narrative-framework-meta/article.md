@@ -60,7 +60,7 @@ The Actor-Narrative Framework routes around that constraint. It does not require
 
 Think of it as a Narrative VPN. Mainstream coverage of a contested topic is, in practice, geoblocked — the structural logic of who benefits from a given framing is systematically excluded from the version of events that achieves distribution at scale. A reader who engages with that coverage without a filter is operating inside someone else's jurisdictional reality.
 
-The goal is not to fix the junior analyst. The goal is to make you the senior engineer who knows how to read their raw output.
+The goal is not to fix the junior analyst. The goal is to make you the strategist who can read the gap between what a narrative declares and what the power structure underneath it requires.
 
 ---
 

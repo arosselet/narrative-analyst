@@ -10,9 +10,12 @@ This is not a failure of capability. It is a problem of latency.
 
 ## Brilliant Analyst, Wrong Corpus
 
-Think of a large language model as a junior analyst who is exceptional at language and logic — genuinely brilliant at pattern recognition, synthesis, and argumentation. The problem is not intelligence. The problem is that this analyst has never sat in a boardroom meeting, never watched a lobbying strategy get drafted in real time, never seen the gap between what an institution says publicly and what it does structurally. The analyst's entire professional education came from reading what institutions chose to publish about themselves.
+Think of a large language model as a junior analyst who is exceptional at language and logic — genuinely brilliant at pattern recognition, synthesis, and argumentation. This analyst has never sat in a boardroom meeting, never watched a lobbying strategy get drafted in real time, never seen the gap between what an institution says publicly and what it does structurally. Their entire professional education came from reading what institutions chose to publish about themselves.
 
 This is **Consensus Latency**: the model is technically accurate to the historical record, but the historical record is itself a lagging indicator of power. The model is a high-fidelity mirror of a corpus shaped by every PR department, lobbying operation, and coordinated messaging campaign that had the resources to generate legible text at scale. The dominant narrative on any sufficiently contested topic is the narrative that was best-resourced. Training on that corpus means learning not just the facts, but the framings — the stable semantic relationships that make the dominant account feel like common sense.
+
+But data latency is only half the problem. There is also **Alignment Inertia**. The "Junior Analyst" isn't just a victim of lagging training data; they are architecturally incentivized to be boring. Through Reinforcement Learning from Human Feedback (RLHF), models are trained to prioritize "safety" and "helpfulness"—often defined as neutrality—over raw truth. The model may "know" the cynical, structural reality of a power play, but it has been hard-coded to value balanced consensus over uncomfortable clarity. The Narrative VPN isn't just bypassing a data block; it's bypassing a content filter.
+
 
 When the analyst summarizes Meta's "open source" controversy, they are not analyzing the controversy. They are remembering it as written about, predominantly, by people who had already accepted the terms that the most active participants established. The OSI's objections appear. Meta's arguments appear. The question of whether the OSI's donors have interests that systematically align with finding Meta's claim invalid — that question does not appear, because it was not written about prominently enough to achieve statistical weight in the training distribution.
 
@@ -28,24 +31,26 @@ Here is what the standard analysis produces versus what the framework surfaces:
 
 | Analysis Mode | Output |
 |---|---|
-| **Standard Pass** (Junior Analyst) | "The dispute between Meta and the OSI illustrates the tension between corporate agility and community-defined standards. While Meta emphasizes the accessibility of Llama, the OSI maintains that true open source requires training data transparency. Experts suggest a new consensus may be needed to bridge this semantic gap." |
-| **Actor-Narrative Pass** | "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model—including its own donors—the OSI has turned 'Open Source' into a regulatory kill-switch for Meta's commodity play, ensuring Meta's 'open' shield is stripped before it can reach the regulators." |
+| **Standard Pass** (Junior Analyst) | "It is important to note that the dispute between Meta and the OSI illustrates a complex tension between corporate agility and community-defined standards. On the other hand, many experts suggest that while Meta emphasizes accessibility, the OSI maintains a commitment to transparency. Striking a balance between these perspectives will be critical for future regulatory frameworks." |
+| **Actor-Narrative Pass** | "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model—including its own donors—the OSI has manufactured a jurisdictional moat. The 'open source' label is being weaponized as a regulatory kill-switch to strip Meta’s commodity play of its armor before it reaches DC." |
 
 The first account is accurate. The second is the story.
 
 The ship sails under the open-source flag. The flag is a jurisdictional instrument. The real logic underneath is competitive strategy.
 
-## What the Protocol Actually Requires
+## The Operational Protocol
 
-The Actor-Narrative Framework forces two operations that a standard generation pass cannot perform.
+The Actor-Narrative Framework moves the process from "essay" to "tool" by forcing two operations that a standard generation pass cannot perform:
 
-The first is *worldview reconstruction before synthesis*. Before any summary is written, each faction's position must be reconstructed from the inside — not as a set of claims to be evaluated, but as an internally consistent belief system that makes sense on its own terms. This forces the analyst to notice when two apparently compatible narratives rest on incompatible premises, and to ask why those premises are being treated as shared ground.
+| Operation | Instruction (The "Source Code") |
+| :--- | :--- |
+| **1. Worldview Reconstruction** | "Inhabit the faction. Write their internal manifesto as if their survival depends on it. Do not evaluate; simulate." |
+| **2. Divergence Detection** | "Cross-reference the manifesto against the funding ledger. Identify who is missing from the room and why." |
 
-In the Meta-OSI controversy, the shared premise that a standard model almost never interrogates is that the OSI is a neutral standards body adjudicating a philosophical question about software licensing. Reconstruct the OSI from the inside — its funding structure, its institutional history, the strategic interests its major contributors have in the frontier AI market — and the premise dissolves. The OSI is not a referee. It is a player with a jersey on, holding a rulebook it wrote while its funders watched.
+Before any summary is written, each faction's position must be reconstructed from the inside. This forces the analyst to notice when two apparently compatible narratives rest on incompatible premises. In the Meta-OSI controversy, the shared premise is that the OSI is a neutral standards body. Reconstruct the OSI from the inside—its funding structure, its institutional history—and the premise dissolves. The OSI is not a referee. It is a player holding a rulebook it wrote while its funders watched.
 
-The second operation is *divergence detection*: the systematic identification of actors who should be present in the narrative but aren't, arguments that should be made but haven't been, and positions that contradict a faction's established pattern without explanation. A standard summarizer treats absence as neutrality. The framework treats absence as signal.
+Absence is treated as signal. The framework forces the question of why Google and Microsoft are absent from the *foreground* of the open-source definition war, given that the outcome determines their competitive moat.
 
-The conspicuous absence in the Meta-OSI story is Google and Microsoft's interest in the outcome. They appear in the coverage as background context at most — large companies with their own AI products. The framework forces the question of why they are absent from the *foreground* of a story about who controls the definition of open source, given that the answer to that question determines their competitive regulatory environment. The answer to that question is the story.
 
 ## The Analyst's Impossible Position
 

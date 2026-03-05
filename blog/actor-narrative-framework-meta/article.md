@@ -28,8 +28,8 @@ Here is what the standard analysis produces versus what the framework surfaces:
 
 | Analysis Mode | Output |
 |---|---|
-| **Standard Pass** (Junior Analyst) | "OSI and Meta disagree on training data standards. OSI believes full transparency is required for true open-source status; Meta argues this is impractical given commercial constraints. The community remains divided." |
-| **Actor-Narrative Pass** | "OSI is enforcing a transparency standard that its donors' competitors cannot meet, effectively neutralizing Meta's open-source branding strategy while insulating incumbent frontier labs from the same scrutiny." |
+| **Standard Pass** (Junior Analyst) | "The dispute between Meta and the OSI illustrates the tension between corporate agility and community-defined standards. While Meta emphasizes the accessibility of Llama, the OSI maintains that true open source requires training data transparency. Experts suggest a new consensus may be needed to bridge this semantic gap." |
+| **Actor-Narrative Pass** | "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model—including its own donors—the OSI has turned 'Open Source' into a regulatory kill-switch for Meta's commodity play, ensuring Meta's 'open' shield is stripped before it can reach the regulators." |
 
 The first account is accurate. The second is the story.
 

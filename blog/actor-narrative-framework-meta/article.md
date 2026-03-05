@@ -29,10 +29,11 @@ The Open Source Initiative's training-data transparency standard — the standar
 
 Here is what the standard analysis produces versus what the framework surfaces:
 
-| Analysis Mode | Output |
-|---|---|
-| **Standard Pass** (Junior Analyst) | "It is important to note that the dispute between Meta and the OSI illustrates a complex tension between corporate agility and community-defined standards. On the other hand, many experts suggest that while Meta emphasizes accessibility, the OSI maintains a commitment to transparency. Striking a balance between these perspectives will be critical for future regulatory frameworks." |
-| **Actor-Narrative Pass** | "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model—including its own donors—the OSI has manufactured a jurisdictional moat. The 'open source' label is being weaponized as a regulatory kill-switch to strip Meta’s commodity play of its armor before it reaches DC." |
+**Standard Pass (Junior Analyst):**
+> "It is important to note that the dispute between Meta and the OSI illustrates a complex tension between corporate agility and community-defined standards. On the other hand, many experts suggest that while Meta emphasizes accessibility, the OSI maintains a commitment to transparency. Striking a balance between these perspectives will be critical for future regulatory frameworks."
+
+**Actor-Narrative Pass:**
+> "The OSI is not a referee; it's a defensive line for incumbents. By mandating a transparency standard that is legally impossible for any frontier model—including its own donors—the OSI has manufactured a jurisdictional moat. The 'open source' label is being weaponized as a regulatory kill-switch to strip Meta’s commodity play of its armor before it reaches DC."
 
 The first account is accurate. The second is the story.
 
@@ -42,10 +43,11 @@ The ship sails under the open-source flag. The flag is a jurisdictional instrume
 
 The Actor-Narrative Framework moves the process from "essay" to "tool" by forcing two operations that a standard generation pass cannot perform:
 
-| Operation | Instruction (The "Source Code") |
-| :--- | :--- |
-| **1. Worldview Reconstruction** | "Inhabit the faction. Write their internal manifesto as if their survival depends on it. Do not evaluate; simulate." |
-| **2. Divergence Detection** | "Cross-reference the manifesto against the funding ledger. Identify who is missing from the room and why." |
+**1. Worldview Reconstruction**
+Instruction: "Inhabit the faction. Write their internal manifesto as if their survival depends on it. Do not evaluate; simulate."
+
+**2. Divergence Detection**
+Instruction: "Cross-reference the manifesto against the funding ledger. Identify who is missing from the room and why."
 
 Before any summary is written, each faction's position must be reconstructed from the inside. This forces the analyst to notice when two apparently compatible narratives rest on incompatible premises. In the Meta-OSI controversy, the shared premise is that the OSI is a neutral standards body. Reconstruct the OSI from the inside—its funding structure, its institutional history—and the premise dissolves. The OSI is not a referee. It is a player holding a rulebook it wrote while its funders watched.
 

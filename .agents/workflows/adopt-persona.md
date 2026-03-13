@@ -36,3 +36,7 @@ This workflow initiates the 3-stage pipeline to deconstruct and analyze an artic
 **5. Completion**
 - Update any necessary `task.md` or tracker files.
 - Notify the user with links to the generated artifacts (`article.md` and the visual metaphor).
+
+**6. (Optional) Stage 4: Short-Form Video**
+- Ask the user if they'd like to generate a reel for this topic.
+- If yes, follow the `/generate-reel` workflow using the same topic name.

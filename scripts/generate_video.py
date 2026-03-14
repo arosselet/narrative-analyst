@@ -410,6 +410,7 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None, max_d
         
         sm = difflib.SequenceMatcher(None, clean_script, [clean_token(w["text"]) for w in whisper_results])
         all_word_timestamps = [None] * len(script_words)
+        all_word_whisper_indices = [None] * len(script_words)
         
         # 1. Map anchors
         for block in sm.get_matching_blocks():
@@ -419,6 +420,7 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None, max_d
                     "start": w_res["start"],
                     "end": w_res["end"]
                 }
+                all_word_whisper_indices[block.a + idx] = block.b + idx
         
         # 2. Fill gaps via interpolation
         last_idx = -1
@@ -428,36 +430,136 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None, max_d
                     t0 = all_word_timestamps[last_idx]["end"] if last_idx >= 0 else 0.0
                     t1 = all_word_timestamps[i]["start"]
                     
+                    b0 = all_word_whisper_indices[last_idx] if last_idx >= 0 else -1
+                    b1 = all_word_whisper_indices[i] if i < len(all_word_timestamps) else len(whisper_results)
+                    
                     gap_words = clean_script[last_idx+1 : i]
                     char_counts = [max(1, len(w)) for w in gap_words]
                     total_chars = sum(char_counts)
                     
-                    current_t = t0
-                    for k, word_idx in enumerate(range(last_idx+1, i)):
-                        duration = (t1 - t0) * (char_counts[k] / total_chars)
-                        all_word_timestamps[word_idx] = {
-                            "start": current_t,
-                            "end": current_t + duration
-                        }
-                        current_t += duration
+                    gap_whisper = whisper_results[b0 + 1 : b1]
+                    
+                    if gap_whisper and total_chars > 0:
+                        # Sub-alignment: distribute script words into Whisper buckets
+                        whisper_durs = [w["end"] - w["start"] for w in gap_whisper]
+                        total_whisper_dur = sum(whisper_durs)
+                        
+                        if total_whisper_dur > 0:
+                            bucket_allocations = [[] for _ in range(len(gap_whisper))]
+                            current_char = 0
+                            for k in range(len(gap_words)):
+                                center_char = current_char + char_counts[k] / 2
+                                ratio = center_char / total_chars
+                                
+                                cum_dur = 0
+                                allocated = False
+                                for j, w_dur in enumerate(whisper_durs):
+                                    cum_dur += w_dur
+                                    if ratio <= (cum_dur / total_whisper_dur):
+                                        bucket_allocations[j].append(k)
+                                        allocated = True
+                                        break
+                                if not allocated:
+                                    bucket_allocations[-1].append(k)
+                                current_char += char_counts[k]
+                                
+                            for j, indices in enumerate(bucket_allocations):
+                                if not indices: continue
+                                w_item = gap_whisper[j]
+                                sub0, sub1 = w_item["start"], w_item["end"]
+                                b_chars = [char_counts[idx] for idx in indices]
+                                b_total_chars = sum(b_chars)
+                                
+                                curr_t = sub0
+                                for b_word_idx, k_idx in enumerate(indices):
+                                    duration = (sub1 - sub0) * (b_chars[b_word_idx] / b_total_chars)
+                                    all_word_timestamps[last_idx + 1 + k_idx] = {
+                                        "start": curr_t,
+                                        "end": curr_t + duration
+                                    }
+                                    curr_t += duration
+                        else:
+                            # Fallback if whisper durations are 0 (e.g. alignment glitch)
+                            current_t = t0
+                            for k, word_idx in enumerate(range(last_idx+1, i)):
+                                duration = (t1 - t0) * (char_counts[k] / total_chars)
+                                all_word_timestamps[word_idx] = {"start": current_t, "end": current_t + duration}
+                                current_t += duration
+                    else:
+                        # uniform interpolation
+                        current_t = t0
+                        for k, word_idx in enumerate(range(last_idx+1, i)):
+                            duration = (t1 - t0) * (char_counts[k] / total_chars)
+                            all_word_timestamps[word_idx] = {
+                                "start": current_t,
+                                "end": current_t + duration
+                            }
+                            current_t += duration
                 last_idx = i
             elif i == len(all_word_timestamps):
                 if i > last_idx + 1:
                     t0 = all_word_timestamps[last_idx]["end"] if last_idx >= 0 else 0.0
                     t1 = total_duration
                     
+                    b0 = all_word_whisper_indices[last_idx] if last_idx >= 0 else -1
+                    b1 = len(whisper_results)
+                    
                     gap_words = clean_script[last_idx+1:]
                     char_counts = [max(1, len(w)) for w in gap_words]
                     total_chars = sum(char_counts)
                     
-                    current_t = t0
-                    for k, word_idx in enumerate(range(last_idx+1, i)):
-                        duration = (t1 - t0) * (char_counts[k] / total_chars)
-                        all_word_timestamps[word_idx] = {
-                            "start": current_t,
-                            "end": current_t + duration
-                        }
-                        current_t += duration
+                    gap_whisper = whisper_results[b0 + 1 : b1]
+                    
+                    if gap_whisper and total_chars > 0:
+                        whisper_durs = [w["end"] - w["start"] for w in gap_whisper]
+                        total_whisper_dur = sum(whisper_durs)
+                        if total_whisper_dur > 0:
+                            bucket_allocations = [[] for _ in range(len(gap_whisper))]
+                            current_char = 0
+                            for k in range(len(gap_words)):
+                                center_char = current_char + char_counts[k] / 2
+                                ratio = center_char / total_chars
+                                cum_dur = 0
+                                allocated = False
+                                for j, w_dur in enumerate(whisper_durs):
+                                    cum_dur += w_dur
+                                    if ratio <= (cum_dur / total_whisper_dur):
+                                        bucket_allocations[j].append(k)
+                                        allocated = True
+                                        break
+                                if not allocated:
+                                    bucket_allocations[-1].append(k)
+                                current_char += char_counts[k]
+                                
+                            for j, indices in enumerate(bucket_allocations):
+                                if not indices: continue
+                                w_item = gap_whisper[j]
+                                sub0, sub1 = w_item["start"], w_item["end"]
+                                b_chars = [char_counts[idx] for idx in indices]
+                                b_total_chars = sum(b_chars)
+                                curr_t = sub0
+                                for b_word_idx, k_idx in enumerate(indices):
+                                    duration = (sub1 - sub0) * (b_chars[b_word_idx] / b_total_chars)
+                                    all_word_timestamps[last_idx + 1 + k_idx] = {
+                                        "start": curr_t,
+                                        "end": curr_t + duration
+                                    }
+                                    curr_t += duration
+                        else:
+                            current_t = t0
+                            for k, word_idx in enumerate(range(last_idx+1, i)):
+                                duration = (t1 - t0) * (char_counts[k] / total_chars)
+                                all_word_timestamps[word_idx] = {"start": current_t, "end": current_t + duration}
+                                current_t += duration
+                    else:
+                        current_t = t0
+                        for k, word_idx in enumerate(range(last_idx+1, i)):
+                            duration = (t1 - t0) * (char_counts[k] / total_chars)
+                            all_word_timestamps[word_idx] = {
+                                "start": current_t,
+                                "end": current_t + duration
+                            }
+                            current_t += duration
 
         # Safety Fallback
         if any(t is None for t in all_word_timestamps):

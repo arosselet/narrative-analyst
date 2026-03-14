@@ -23,6 +23,7 @@ from google.cloud import texttospeech
 from moviepy import (
     ImageClip,
     AudioFileClip,
+    VideoFileClip,
     CompositeVideoClip,
     concatenate_audioclips,
     vfx,
@@ -106,12 +107,10 @@ def load_background(path: str | None) -> Image.Image:
     return make_gradient_bg()
 
 
-def prepare_text_region(bg: Image.Image) -> Image.Image:
-    """Apply a subtle darkening/blur to the center of the bg where text sits."""
-    result = bg.copy()
-    # Create a darkened overlay in the center third
-    overlay = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(overlay)
+def prepare_text_region_transparent() -> Image.Image:
+    """Create a transparent layer with subtle darkening in the center lower third."""
+    img = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
     # Gradient vignette: darker in the lower third
     target_y = int(HEIGHT * 0.7)
     band_height = HEIGHT // 4
@@ -121,8 +120,7 @@ def prepare_text_region(bg: Image.Image) -> Image.Image:
             # Closer to target = more darkening
             alpha = int(140 * (1.0 - dist / band_height))
             draw.line([(0, y), (WIDTH, y)], fill=(0, 0, 0, alpha))
-    result = Image.alpha_composite(result.convert("RGBA"), overlay)
-    return result.convert("RGB")
+    return img
 
 
 # ─── Text Rendering ──────────────────────────────────────────────────────────
@@ -150,10 +148,9 @@ def draw_outlined_text(
 
 def render_sentence_card(
     sentence: str,
-    bg: Image.Image,
 ) -> Image.Image:
-    """Render a single sentence centered on the prepared background."""
-    card = prepare_text_region(bg)
+    """Render a single sentence centered on a transparent background."""
+    card = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
     draw = ImageDraw.Draw(card)
     font = ImageFont.truetype(FONT_PATH, FONT_SIZE)
 
@@ -277,12 +274,19 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None) -> st
         bg_clip = ImageClip(bg_path_file).with_duration(total_duration)
         video_clips.append(bg_clip)
 
+        # Persistent darkening layer (behind all text)
+        darkening_layer = prepare_text_region_transparent()
+        darkening_path = os.path.join(tmpdir, "darkening.png")
+        darkening_layer.save(darkening_path)
+        darkening_clip = ImageClip(darkening_path).with_duration(total_duration)
+        video_clips.append(darkening_clip)
+
         for i, sentence in enumerate(sentences):
             # Each sentence card duration = speech duration + pad
             card_dur = segment_durations[i] + SENTENCE_PAD
 
-            # Render the text card
-            card = render_sentence_card(sentence, bg)
+            # Render the text card (transparent)
+            card = render_sentence_card(sentence)
             card_path = os.path.join(tmpdir, f"card_{i:02d}.png")
             card.save(card_path)
 

@@ -1,18 +1,23 @@
 {
   "topic": "open-source-ai-war",
   "sentences": [
-    "What if \"open source\" was actually a human shield?",
-    "Meta is giving away its AI models for free, calling it the Linux of AI.",
-    "The surface story is one of pure benevolence.",
-    "But the real mechanism is regulatory capture.",
-    "By wrapping their product in the open-source flag, Meta recruits you as an unwitting lobbyist.",
-    "It is politically toxic to regulate a community, so they use your work to shield their model.",
-    "And when those models are misused, Meta points to a usage policy and walks away.",
-    "They build the engine, but you hold all the legal liability.",
-    "They aren't just giving you tools; they are externalizing their risk."
+    "You probably built something on a free AI model this year.",
+    "The company that gave it to you banned its own competitors from using it.",
+    "Meta calls Llama open source.",
+    "They say they are democratizing intelligence for everyone.",
+    "This is a LOBBYING STRATEGY.",
+    "You cannot easily regulate the open source community.",
+    "That is why Meta wrapped a corporate product in that flag.",
+    "The license blocks Google and ByteDance by name.",
+    "But it recruits you as an unwitting regulatory shield.",
+    "Regulators want to crack down on a trillion-dollar corporation.",
+    "They cannot touch a global community of innovators.",
+    "The generosity is not for your power.",
+    "It is for their protection.",
+    "Zuckerberg opened the gates so the crowd would stand between him and the law."
   ],
-  "hashtags": ["#aiwar", "#meta", "#opensource", "#regulation", "#techtruth"],
+  "hashtags": ["#meta", "#llama", "#opensource", "#aipolicy", "#regulation"],
   "voice": "en-US-Chirp3-HD-Charon",
   "style": "dark",
-  "background_prompt": "A hidden jungle clearing at golden hour, a small limestone pool fed by a gentle, moss-covered waterfall. Soft light filters through the canopy, illuminating floating dust motes and deep green ferns. The scene is intimate and inviting. The lower third of the frame is a dark, calm water surface, keeping the composition simple for text overlay."
+  "background_prompt": "A breathtaking, serene cinematic aerial shot of a winding turquoise glacial river flowing through a lush, deep green valley in the Swiss Alps at sunrise. Soft, ethereal morning mist clings to the pine trees. In the distance, jagged snow-capped peaks are bathed in warm, golden light against a clear pale blue sky. 9:16 portrait orientation, photorealistic, 8k resolution, ultra-wide angle, stunning natural beauty."
 }

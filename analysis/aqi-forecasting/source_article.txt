@@ -1,0 +1,52 @@
+Project Proposal: AQI Forecasting (Group 14)
+Objective
+To develop a predictive machine learning model that forecasts next-day () Air Quality Index (AQI) levels. The model prioritizes leading indicators—meteorological stagnation, geospatial metadata, and urban mobility—over reactive sensor data to enable proactive urban management.
+1. Problem Statement
+Current environmental monitoring is predominantly diagnostic, reporting pollution levels post-exposure. This project shifts the paradigm toward proactive forecasting. By predicting AQI 24 hours in advance, city managers can implement preemptive measures (e.g., traffic diversions, public health advisories) before peak pollution thresholds are reached.
+2. Data Infrastructure
+The system integrates three primary repositories to construct a multidimensional urban profile:
+World Weather Repository (Daily Updating)
+Provides over 40+ features including temperature, wind, pressure, precipitation, humidity, visibility, and air quality measurements. This dataset is the primary source for analyzing global weather patterns and climate trends.
+Urban Air Quality and Environmental Dataset
+Contains 14,235 records of urban air quality measurements. It includes the AQI target variable and predictors such as traffic density and industrial activity. This dataset is patterned after publicly available sources (OpenAQ, AQICN, US EPA) and reflects realistic fluctuations found in actual environmental data.
+World Cities Database
+Used for geospatial metadata enrichment, specifically providing city name, region, country, and population statistics to contextualize environmental impact based on urban scale.
+3. Technical Strategy: Data Fusion & Logic
+The technical core involves a three-stage data fusion process to map synthetic activity indicators onto real-world meteorological records.
+Phase A: Geospatial Enrichment
+The World Weather Repository is merged with the World Cities Database using geolocations to enrich environmental records with population density and regional metadata.
+Phase B: Activity Injection (Feature Bridging)
+To overcome the absence of real-time mobility sensors in the weather records, we match each record in our enriched weather dataset with the "nearest" row in the Urban Air Quality Dataset. Matching is performed using a similarity heuristic based on:
+Temperature
+Humidity
+Wind Speed
+Current AQI
+This allows for the injection of realistic traffic_density and industrial_activity values into the high-resolution meteorological records.
+Feature Engineering
+The model utilizes a comprehensive feature set () to predict the target ():
+Category
+Features
+Geospatial & Demo
+Latitude, Longitude, Population
+Urban Activity
+Traffic Density, Industrial Activity
+Atmospheric
+Temp (C/F), Condition Text, Wind (mph/kph/degree/direction)
+Pressure & Precip
+Pressure (mb/in), Precipitation (mm/in), Humidity, Cloud Cover
+Sensory & Exposure
+Feels Like (C/F), UV Index, Gust (mph/kph)
+
+Constraint: Current pollutant concentrations (individual chemical components) are excluded from the feature set to ensure the model identifies causal drivers rather than relying on temporal persistence.
+4. Hypotheses
+Null Hypothesis (): External weather and mobility data at  contain no statistically significant predictive power for  air quality.
+Research Hypothesis (): Specific combinations of atmospheric stagnation (low wind speed/high pressure) and high transit mobility at  act as definitive leading indicators for AQI degradation at .
+5. Methodology & Evaluation
+The project employs a dual-modeling approach:
+Regression (Random Forest, XGBoost)
+Purpose: Estimating specific numeric AQI values.
+Primary Metric: Mean Absolute Error (MAE).
+Classification (Support Vector Machines)
+Purpose: Categorizing air quality into health-risk bands (Good, Moderate, Unhealthy).
+Primary Metric: -Score (prioritizing the minimization of False Negatives for "High Risk" events).
+Success Criteria: The project is successful if the classification model achieves a high -Score, providing a reliable 24-hour warning window for urban health hazards.

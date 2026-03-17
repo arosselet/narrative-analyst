@@ -1,0 +1,23 @@
+{
+  "topic": "aqi-forecasting",
+  "sentences": [
+    "You depend on numbers that tell you what you already breathed.",
+    "Standard air quality monitoring is diagnostic, reporting pollution levels after exposure.",
+    "A new predictive model shifts the paradigm forward.",
+    "It predicts AQI 24 hours in advance using leading indicators.",
+    "Specifically, it tracks atmospheric stagnation, transit density, and industrial activity.",
+    "Geospatial data adds population density to calculate human exposure risk.",
+    "The model excludes current pollutant levels to force pure causal learning.",
+    "This gives city managers a reliable 24-hour warning window.",
+    "Traffic can be diverted before peak pollution thresholds are reached."
+  ],
+  "hashtags": [
+    "#AQI",
+    "#MachineLearning",
+    "#UrbanPlanning",
+    "#DataScience"
+  ],
+  "voice": "en-US-Chirp3-HD-Charon",
+  "style": "dark",
+  "background_prompt": "Macro lens shot of glowing orange magma crusts and grey ash clouds in the background, with sharp shards of obsidian glass in the foreground in hyper-detail, high-contrast profiles, volumetric god-rays, 8k, photorealistic, masterpiece, 9:16."
+}

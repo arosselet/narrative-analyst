@@ -679,8 +679,9 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None, max_d
         ).with_audio(full_audio).with_duration(total_duration)
 
         # ── Write output ──
-        os.makedirs(output_dir, exist_ok=True)
-        output_path = os.path.join(output_dir, f"{topic}_reel.mp4")
+        os.makedirs(os.path.join(output_dir, "videos"), exist_ok=True)
+        os.makedirs(os.path.join(output_dir, "narration"), exist_ok=True)
+        output_path = os.path.join(output_dir, "videos", f"{topic}_reel.mp4")
 
         final.write_videofile(
             output_path,
@@ -692,7 +693,7 @@ def build_video(script: dict, output_dir: str, bg_path: str | None = None, max_d
         )
 
         # Also save narration audio
-        narration_path = os.path.join(output_dir, f"{topic}_narration.mp3")
+        narration_path = os.path.join(output_dir, "narration", f"{topic}_narration.mp3")
         full_audio.write_audiofile(narration_path, logger=None)
 
         print(f"\n✅ Output: {output_path}")
@@ -743,7 +744,7 @@ def main():
         sys.exit(1)
 
     project_root = Path(__file__).resolve().parent.parent
-    output_dir = str(project_root / "videos")
+    output_dir = str(project_root / "reel_artifacts")
 
     build_video(script, output_dir, bg_path=args.background, max_duration=args.limit)
 

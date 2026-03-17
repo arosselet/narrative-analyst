@@ -19,22 +19,41 @@ The tension in scriptwriting is between **Engagement** (Hooking the viewer) and 
 
 **The Golden Rule:** If you have to choose between a catchy sentence and a factual one, **choose the factual one.** The "Whoa, really!" effect must come from the *ordinary logic of the situation, stated plainly* — not from emotional escalation.
 
-### Visual Aesthetic (Cover Art)
-The `background_prompt` must follow the **Natural World / Cinematic** protocol.
-- **Mining Rule:** Select a cinematic natural setting that mirrors the *weight* or *mood* of the discovery without being literal.
-- **Guideline:** Highly cinematic, photorealistic, 9:16, 8k resolution.
+### Visual Aesthetic (The Hook)
+* **Objective:** Create a "visual feast" that stops the scroll within 1-2 seconds.
+* **The Non-Sequitur Rule:** Absolute zero literal or metaphorical connection to the script.
+* **Core Subject:** Colossal, untouched nature with "impossible" scale.
+* **Prohibited Content:** No humans, dwellings, vehicles, or man-made structures.
+* **Composition:** Rule of Thirds or Centered Symmetry. Use a "Macro Scale Hook": A tiny foreground element (obsidian shard, dew drop, sand grain) in hyper-detail, with a massive background vista (canyon, glacier, dunes) in bokeh.
+* **Lighting:** High-contrast profiles (Blue Hour, Silver Moonlight, Subsurface Scattering, Volumetric God-rays). 
+* **Texture:** Tactile Hyper-Realism (crystalline frost, porous volcanic rock, velvet moss, iridescent mineral crusts).
+* **Atmosphere:** Dynamic Physics (frozen splash, wind-whipped sand, swirling spores, tectonic fractures).
+* **Cinematography:** Anamorphic lens, 8k, photorealistic, National Geographic style, f/8 or f/11 for sharp focus and maximum detail depth.
+* **Color Theory:** Deep, rich palettes (Obsidian/Gold, Electric Teal/Indigo, Emerald/Silver, Volcanic Orange/Ash Gray).
+* **Model Tier:** Force "Nano Banana Pro" with quality triggers: `masterpiece, ultra-high resolution, hyper-detailed, 8k, photorealistic, cinematic lighting`.
+* **Output Format:** Strictly 9:16 aspect ratio.
 
-### The 12-16 Sentence Rapid Arc
-Pacing is critical. Total word count must remain low, but sentence count must be high. This allows for rapid visual cuts and a staccato, forensic delivery.
+### Environment Modules (Pick One)
+1. **Macro-Obsidian & Volcanic Ash:** Shards of obsidian glass in foreground, cooling magma crusts and grey ash clouds in background. Palette: Black, charcoal, glowing orange.
+2. **Bioluminescent Glacial Caves:** Translucent teal ice with glowing neon organisms trapped inside. Macro ice crystals. Palette: Cyan, indigo, electric blue.
+3. **Iridescent Salt Crusts:** Hexagonal white salt flats with mirror-perfect pools of pink and turquoise mineral water. Palette: White, pink, teal.
+4. **Velvet Moss & Spore Dynamics:** Macro-level moss forest with glowing spores mid-burst in the air. Palette: Deep forest green, neon yellow, dark earth.
+5. **Stratospheric Cloudscapes:** High-altitude lenticular clouds at sunset with "silver lining" light rays. Palette: Gold, deep purple, silver.
+6. **Tectonic Basalt Columns:** Perfect geometric hexagonal rock pillars with deep, dark fissures. Palette: Dark grey, obsidian, silver moonlight.
 
-**The Pacing Rule:** Double the sentences, halve the words per sentence. Never use a comma where a period could go.
+### Prompt Structure
+[Environment Module] + [Macro Scale Hook Detail] + [Lighting & Texture Focus] + [Dynamic Physics Effect] + [Model Tier & Quality Triggers] + 9:16.
 
-1. **The Stake Hook (2-3 sentences):** The first sentence names something the viewer already uses, trusts, or depends on. The second sentence states a verifiable structural fact that contradicts their assumption. DO NOT speculate or predict consequences. Just name the thing and the fact. "Every chip in your phone needs a gas that leaks through solid metal. The world's supply just came from one factory."
-2. **The Official Story (2 sentences):** State the narrative. Keep it brief.
-3. **The Reveal (2 sentences):** Name the mechanic. Use it as a label. "This is a Shell Game. A structural distraction."
-4. **The Mechanism (2-3 sentences):** Explain the logic in short, punchy steps. Step A. Then Step B.
-5. **The Evidence (2 sentences):** Just the facts. No fluff.
-6. **The Confirmation (2-3 sentences):** Close the loop. Restate the divergence. "It wasn't a mistake. It was the design."
+### The 6-8 Beat Story Arc
+Focus on narrative progression over sentence count. Each beat should build the structural case organically without forcing a template structure.
+
+1. **The Stake Hook:** Name something the viewer already uses or depends on, then state a structural fact that contradicts their assumption.
+2. **The Official Story:** Briefly state the standard narrative or assumption.
+3. **The Reveal:** Introduce the core mechanism or divergence.
+4. **The Mechanism:** Explain the logic in short, punchy steps. How does this divergence operate?
+5. **The Evidence:** Provide the concrete fact (a quote, a timeline anomaly, a specific data point) that proves the mechanism.
+6. **The Confirmation:** Close the loop. Restate the divergence clearly.
+
 
 ### Litmus Test
 "Does this feel like a rapid-fire forensic briefing?" If sentences have more than 10-12 words, they are too long. If the final sentence echoes the first and the machine is exposed, it passes.
